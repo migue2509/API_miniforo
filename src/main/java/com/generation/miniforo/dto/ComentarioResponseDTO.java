@@ -1,4 +1,10 @@
 package com.generation.miniforo.dto;
 
-public class ComentarioResponseDTO {
+import java.time.LocalDateTime;
+
+public record ComentarioResponseDTO(
+        String autorNombre,
+        String texto,
+        LocalDateTime fecha
+) {
 }

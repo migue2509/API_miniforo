@@ -1,4 +1,11 @@
 package com.generation.miniforo.dto;
 
-public class UsuarioResponseDTO {
+import java.util.Map;
+
+public record UsuarioResponseDTO(
+        String id,
+        String nombre,
+        String email,
+        Map<String, Object> datosPerfil
+) {
 }
